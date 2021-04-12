@@ -1,11 +1,12 @@
 ---
 name: Inspect GITHUB_EVENT_PATH
-    
+
 on:
   pull_request:
     types:
       - closed
-    
+      - labeled
+
 jobs:
   container:
     runs-on: ubuntu-latest
